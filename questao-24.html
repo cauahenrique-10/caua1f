@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 24 - Faixa de 4 cards</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 16px; }
+    .faixa {
+      display: flex;
+      flex-wrap: wrap;            /* quebra em telas estreitas */
+      gap: 1rem;                  /* espaço entre os cards */
+      align-items: stretch;       /* cards da linha com a mesma altura */
+      align-content: flex-start;  /* linhas agrupadas no topo */
+      min-height: 400px;          /* altura para o align-content aparecer */
+    }
+    .card {
+      width: 220px;
+      padding: 1rem;
+      background: #e8f3ec;
+      border: 1px solid #2e8b57;
+    }
+  </style>
+</head>
+<body>
+  <div class="faixa">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+  </div>
+</body>
+</html>
